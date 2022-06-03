@@ -2,6 +2,7 @@
 const express = require('express')
 require('dotenv').config()
 const tasksRouter = require('./routes/tasks.route')
+const { errorHandler } = require('./middlewares/error.middleware')
 
 const app = express()
 

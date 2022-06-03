@@ -5,7 +5,7 @@ const getAllTasks = asyncWrapper(async (req, res) => {
 	const tasks = await Task.find({})
 })
 
-const createTask = asyncWrapper(async (req, res) => {
+const setTask = asyncWrapper(async (req, res) => {
 	const task = await Task.create(req.body)
 })
 
@@ -30,7 +30,7 @@ const updateTask = asyncWrapper(async (req, res, next) => {
 
 module.exports = {
 	getAllTasks,
-	createTask,
+	setTask,
 	getTask,
 	updateTask,
 	deleteTask,
