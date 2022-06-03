@@ -10,6 +10,9 @@ app.use(express.json())
 // Routes
 app.use('/api/v1/tasks', tasksRouter)
 
+// Errors
+app.use(errorHandler)
+
 // Server
 const port = process.env.PORT || 5000
 
